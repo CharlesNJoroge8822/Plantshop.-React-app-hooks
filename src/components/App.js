@@ -14,7 +14,7 @@ function App() {
   useEffect(() => { // pass an arrow function to useEffect
     const fetchPlants = async () => { // asynchronous function will fetch data from the API
       try {
-        const requestBackendData = await fetch('http://localhost:6001/plants'); // this makes a network request to the specified URL
+        const requestBackendData = await fetch('https://plantshop-react-app-hooks.onrender.com/plants'); // this makes a network request to the specified URL
 
         if (!requestBackendData.ok) throw new Error('Failed to fetch plants'); // if fetch is not successful, an error will be printed
 
